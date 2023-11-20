@@ -1,0 +1,67 @@
+E:\مشاريعي\Pharmacy System\Pharmacy System\bin\Debug\Pharmacy System.exe.config
+E:\مشاريعي\Pharmacy System\Pharmacy System\bin\Debug\Pharmacy System.exe
+E:\مشاريعي\Pharmacy System\Pharmacy System\bin\Debug\Pharmacy System.pdb
+E:\مشاريعي\Pharmacy System\Pharmacy System\bin\Debug\Bunifu_UI_v1.5.3.dll
+E:\مشاريعي\Pharmacy System\Pharmacy System\obj\Debug\Pharmacy_System.Form_Bill.resources
+E:\مشاريعي\Pharmacy System\Pharmacy System\obj\Debug\Pharmacy_System.Form_Item.resources
+E:\مشاريعي\Pharmacy System\Pharmacy System\obj\Debug\Pharmacy_System.Form_Login.resources
+E:\مشاريعي\Pharmacy System\Pharmacy System\obj\Debug\Pharmacy_System.Form_Main.resources
+E:\مشاريعي\Pharmacy System\Pharmacy System\obj\Debug\Pharmacy_System.Form_MessageBox.resources
+E:\مشاريعي\Pharmacy System\Pharmacy System\obj\Debug\Pharmacy_System.Form_Receipt.resources
+E:\مشاريعي\Pharmacy System\Pharmacy System\obj\Debug\Pharmacy_System.Form_ReferenceCalculattion.resources
+E:\مشاريعي\Pharmacy System\Pharmacy System\obj\Debug\Pharmacy_System.Form_Store.resources
+E:\مشاريعي\Pharmacy System\Pharmacy System\obj\Debug\Pharmacy_System.Form_SupplierAndCustmer.resources
+E:\مشاريعي\Pharmacy System\Pharmacy System\obj\Debug\Pharmacy_System.Form_UnitItem.resources
+E:\مشاريعي\Pharmacy System\Pharmacy System\obj\Debug\Pharmacy_System.Properties.Resources.resources
+E:\مشاريعي\Pharmacy System\Pharmacy System\obj\Debug\Pharmacy_System.UserControls.UserControl_Add.resources
+E:\مشاريعي\Pharmacy System\Pharmacy System\obj\Debug\Pharmacy_System.UserControls.UserControl_Delete.resources
+E:\مشاريعي\Pharmacy System\Pharmacy System\obj\Debug\Pharmacy_System.UserControls.UserControl_Edite.resources
+E:\مشاريعي\Pharmacy System\Pharmacy System\obj\Debug\Pharmacy_System.UserControls.UserControl_Serch.resources
+E:\مشاريعي\Pharmacy System\Pharmacy System\obj\Debug\Pharmacy_System.UserControls.UserControl_ViewReport.resources
+E:\مشاريعي\Pharmacy System\Pharmacy System\obj\Debug\Pharmacy System.csproj.GenerateResource.cache
+E:\مشاريعي\Pharmacy System\Pharmacy System\obj\Debug\Pharmacy System.csproj.CoreCompileInputs.cache
+E:\مشاريعي\Pharmacy System\Pharmacy System\obj\Debug\Pharmacy System.csproj.CopyComplete
+E:\مشاريعي\Pharmacy System\Pharmacy System\obj\Debug\Pharmacy System.exe
+E:\مشاريعي\Pharmacy System\Pharmacy System\obj\Debug\Pharmacy System.pdb
+E:\مشاريعي\Pharmacy System\Pharmacy System\bin\Debug\AForge.dll
+E:\مشاريعي\Pharmacy System\Pharmacy System\bin\Debug\AForge.Video.DirectShow.dll
+E:\مشاريعي\Pharmacy System\Pharmacy System\bin\Debug\AForge.Video.dll
+E:\مشاريعي\Pharmacy System\Pharmacy System\bin\Debug\zxing.dll
+E:\مشاريعي\Pharmacy System\Pharmacy System\bin\Debug\zxing.presentation.dll
+E:\مشاريعي\Pharmacy System\Pharmacy System\bin\Debug\AForge.xml
+E:\مشاريعي\Pharmacy System\Pharmacy System\bin\Debug\AForge.Video.xml
+E:\مشاريعي\Pharmacy System\Pharmacy System\bin\Debug\AForge.Video.DirectShow.xml
+E:\مشاريعي\Pharmacy System\Pharmacy System\bin\Debug\zxing.xml
+E:\مشاريعي\Pharmacy System\Pharmacy System\bin\Debug\zxing.presentation.xml
+E:\مشاريعي\Pharmacy System\Pharmacy System\obj\Debug\Pharmacy_System.Form_Casher.resources
+E:\مشاريعي\Pharmacy System\Pharmacy System\obj\Debug\Pharmacy_System.UserControls.UserControl_CasherItem.resources
+E:\مشاريعي\Pharmacy System\Pharmacy System\obj\Debug\Pharmacy_System.Form_Input.resources
+E:\مشاريعي\Pharmacy System\Pharmacy System\obj\Debug\Pharmacy System.csprojAssemblyReference.cache
+E:\مشاريعي\Pharmacy System\Pharmacy System\obj\Debug\Pharmacy_System.Form_Report.resources
+E:\مشاريعي\Pharmacy System\Pharmacy System\obj\Debug\Pharmacy_System.Report.UserControl_Billing_Movement.resources
+E:\مشاريعي\Pharmacy System\Pharmacy System\obj\Debug\Pharmacy_System.Report.UserControl_Material_Movement_Synthesis.resources
+E:\مشاريعي\Pharmacy System\Pharmacy System\obj\Debug\Pharmacy_System.Report.UserControl_Material_Profits_Collective.resources
+E:\مشاريعي\Pharmacy System\Pharmacy System\obj\Debug\Pharmacy_System.Report.UserControl_Material_inventory.resources
+E:\مشاريعي\Pharmacy System\Pharmacy System\obj\Debug\Pharmacy_System.Report.UserControl_Material_validity.resources
+E:\مشاريعي\Pharmacy System\Pharmacy System\obj\Debug\Pharmacy_System.Report.UserControl_Damaged_items.resources
+E:\مشاريعي\Pharmacy System\Pharmacy System\obj\Debug\Pharmacy_System.Report.UserControl_Journal.resources
+E:\مشاريعي\Pharmacy System\Pharmacy System\obj\Debug\Pharmacy_System.Report.UserControl_Account_balances.resources
+E:\مشاريعي\Pharmacy System\Pharmacy System\obj\Debug\Pharmacy_System.Report.UserControl_Account_statement.resources
+E:\مشاريعي\Pharmacy System\Pharmacy System\obj\Debug\Pharmacy_System.Report.UserControl_Profit_and_loss.resources
+E:\مشاريعي\Pharmacy System\Pharmacy System\obj\Debug\Pharmacy_System.Form_Replay.resources
+E:\مشاريعي\Pharmacy System\Pharmacy System\obj\Debug\Pharmacy_System.UserControls.TestStoreName_UserControl.resources
+E:\مشاريعي\Pharmacy System\Pharmacy System\obj\Debug\Pharmacy_System.From_CheakSersh.resources
+E:\مشاريعي\Pharmacy System\Pharmacy System\obj\Debug\Pharmacy_System.Form_ChosenReport.resources
+E:\مشاريعي\Pharmacy System\Pharmacy System\obj\Debug\Pharmacy_System.UserControls.UserControl_Setting.resources
+E:\مشاريعي\Pharmacy System\Pharmacy System\obj\Debug\Pharmacy_System.MyMessgeBox.resources
+E:\مشاريعي\Pharmacy System\Pharmacy System\obj\Debug\Pharmacy_System.UserControls.Get_User.resources
+E:\مشاريعي\Pharmacy System\Pharmacy System\obj\Debug\Pharmacy_System.UserControls.UserControls.resources
+E:\مشاريعي\Pharmacy System\Pharmacy System\obj\Debug\Pharmacy_System.Form_User.resources
+E:\مشاريعي\Pharmacy System\Pharmacy System\obj\Debug\Pharmacy_System.UserControls.Get_ID.resources
+E:\مشاريعي\Pharmacy System\Pharmacy System\obj\Debug\Pharmacy_System.UserControls.BackUpDate.resources
+E:\مشاريعي\Pharmacy System\Pharmacy System\obj\Debug\Pharmacy_System.UpdateAndDelete.UpdateDeleteItem_Form.resources
+E:\مشاريعي\Pharmacy System\Pharmacy System\obj\Debug\Pharmacy_System.UpdateAndDelete.UpdateDeleteUnitItem_Form.resources
+E:\مشاريعي\Pharmacy System\Pharmacy System\obj\Debug\Pharmacy_System.UpdateAndDelete.UpdateDeleteSupplier_Form.resources
+E:\مشاريعي\Pharmacy System\Pharmacy System\obj\Debug\Pharmacy_System.UpdateAndDelete.UpdateDeleteReferenceCalculattion_Form.resources
+E:\مشاريعي\Pharmacy System\Pharmacy System\obj\Debug\Pharmacy_System.UpdateAndDelete.UpdateDeleteStore_Form.resources
+E:\مشاريعي\Pharmacy System\Pharmacy System\obj\Debug\Pharmacy_System.UpdateAndDelete.UpdateDeleteReceipt_Form.resources

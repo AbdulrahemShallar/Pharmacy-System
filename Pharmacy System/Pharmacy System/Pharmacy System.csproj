@@ -1,0 +1,669 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7B7BFCFA-0DAA-4CCC-A0B1-921A07E1AA50}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Pharmacy_System</RootNamespace>
+    <AssemblyName>Pharmacy System</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Background2.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AForge, Version=2.2.5.0, Culture=neutral, PublicKeyToken=c1db6ff4eaa06aeb, processorArchitecture=MSIL">
+      <HintPath>packages\AForge.2.2.5\lib\AForge.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video, Version=2.2.5.0, Culture=neutral, PublicKeyToken=cbfb6e07d173c401, processorArchitecture=MSIL">
+      <HintPath>packages\AForge.Video.2.2.5\lib\AForge.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.DirectShow, Version=2.2.5.0, Culture=neutral, PublicKeyToken=61ea4348d43881b7, processorArchitecture=MSIL">
+      <HintPath>packages\AForge.Video.DirectShow.2.2.5\lib\AForge.Video.DirectShow.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>C:\Users\Abd Alrahim Shalar\Downloads\csharpui.com_animationincsharpDemo\UiDesignDemo\UiDesignDemo\bin\Debug\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="zxing, Version=0.16.6.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
+      <HintPath>packages\ZXing.Net.0.16.6\lib\net47\zxing.dll</HintPath>
+    </Reference>
+    <Reference Include="zxing.presentation, Version=0.16.6.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
+      <HintPath>packages\ZXing.Net.0.16.6\lib\net47\zxing.presentation.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form_Casher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Casher.Designer.cs">
+      <DependentUpon>Form_Casher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Class_Connection.cs" />
+    <Compile Include="Classes\Class_Languag.cs" />
+    <Compile Include="Form_Bill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Bill.Designer.cs">
+      <DependentUpon>Form_Bill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_ChosenReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_ChosenReport.Designer.cs">
+      <DependentUpon>Form_ChosenReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Input.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Input.Designer.cs">
+      <DependentUpon>Form_Input.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Item.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Item.Designer.cs">
+      <DependentUpon>Form_Item.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Login.Designer.cs">
+      <DependentUpon>Form_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Main.Designer.cs">
+      <DependentUpon>Form_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_MessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_MessageBox.Designer.cs">
+      <DependentUpon>Form_MessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Receipt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Receipt.Designer.cs">
+      <DependentUpon>Form_Receipt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_ReferenceCalculattion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_ReferenceCalculattion.Designer.cs">
+      <DependentUpon>Form_ReferenceCalculattion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Replay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Replay.Designer.cs">
+      <DependentUpon>Form_Replay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Report.Designer.cs">
+      <DependentUpon>Form_Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Store.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Store.Designer.cs">
+      <DependentUpon>Form_Store.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_SupplierAndCustmer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_SupplierAndCustmer.Designer.cs">
+      <DependentUpon>Form_SupplierAndCustmer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_UnitItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_UnitItem.Designer.cs">
+      <DependentUpon>Form_UnitItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_User.Designer.cs">
+      <DependentUpon>Form_User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="From_CheakSersh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="From_CheakSersh.Designer.cs">
+      <DependentUpon>From_CheakSersh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyMessgeBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyMessgeBox.Designer.cs">
+      <DependentUpon>MyMessgeBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\UserControl_Account_balances.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Report\UserControl_Account_balances.Designer.cs">
+      <DependentUpon>UserControl_Account_balances.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\UserControl_Account_statement.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Report\UserControl_Account_statement.Designer.cs">
+      <DependentUpon>UserControl_Account_statement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\UserControl_Billing Movement.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Report\UserControl_Billing Movement.Designer.cs">
+      <DependentUpon>UserControl_Billing Movement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\UserControl_Damaged_items.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Report\UserControl_Damaged_items.Designer.cs">
+      <DependentUpon>UserControl_Damaged_items.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\UserControl_Journal.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Report\UserControl_Journal.Designer.cs">
+      <DependentUpon>UserControl_Journal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\UserControl_Material Movement_Synthesis.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Report\UserControl_Material Movement_Synthesis.Designer.cs">
+      <DependentUpon>UserControl_Material Movement_Synthesis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\UserControl_Material Profits_Collective.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Report\UserControl_Material Profits_Collective.Designer.cs">
+      <DependentUpon>UserControl_Material Profits_Collective.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\UserControl_Material_inventory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Report\UserControl_Material_inventory.Designer.cs">
+      <DependentUpon>UserControl_Material_inventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\UserControl_Material_validity.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Report\UserControl_Material_validity.Designer.cs">
+      <DependentUpon>UserControl_Material_validity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\UserControl_Profit_and_loss.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Report\UserControl_Profit_and_loss.Designer.cs">
+      <DependentUpon>UserControl_Profit_and_loss.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateAndDelete\UpdateDeleteItem_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateAndDelete\UpdateDeleteItem_Form.Designer.cs">
+      <DependentUpon>UpdateDeleteItem_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateAndDelete\UpdateDeleteReceipt_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateAndDelete\UpdateDeleteReceipt_Form.Designer.cs">
+      <DependentUpon>UpdateDeleteReceipt_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateAndDelete\UpdateDeleteReferenceCalculattion_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateAndDelete\UpdateDeleteReferenceCalculattion_Form.Designer.cs">
+      <DependentUpon>UpdateDeleteReferenceCalculattion_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateAndDelete\UpdateDeleteStore_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateAndDelete\UpdateDeleteStore_Form.Designer.cs">
+      <DependentUpon>UpdateDeleteStore_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateAndDelete\UpdateDeleteSupplier_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateAndDelete\UpdateDeleteSupplier_Form.Designer.cs">
+      <DependentUpon>UpdateDeleteSupplier_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateAndDelete\UpdateDeleteUnitItem_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateAndDelete\UpdateDeleteUnitItem_Form.Designer.cs">
+      <DependentUpon>UpdateDeleteUnitItem_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\BackUpDate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\BackUpDate.Designer.cs">
+      <DependentUpon>BackUpDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Get_ID.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Get_ID.Designer.cs">
+      <DependentUpon>Get_ID.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Get_User.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Get_User.Designer.cs">
+      <DependentUpon>Get_User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\TestStoreName_UserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\TestStoreName_UserControl.Designer.cs">
+      <DependentUpon>TestStoreName_UserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControls.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UserControls.Designer.cs">
+      <DependentUpon>UserControls.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControl_Add.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UserControl_Add.Designer.cs">
+      <DependentUpon>UserControl_Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControl_CasherItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UserControl_CasherItem.Designer.cs">
+      <DependentUpon>UserControl_CasherItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControl_Delete.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UserControl_Delete.Designer.cs">
+      <DependentUpon>UserControl_Delete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControl_Edite.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UserControl_Edite.Designer.cs">
+      <DependentUpon>UserControl_Edite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControl_Serch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UserControl_Serch.Designer.cs">
+      <DependentUpon>UserControl_Serch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControl_Setting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UserControl_Setting.Designer.cs">
+      <DependentUpon>UserControl_Setting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControl_ViewReport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UserControl_ViewReport.Designer.cs">
+      <DependentUpon>UserControl_ViewReport.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form_Casher.resx">
+      <DependentUpon>Form_Casher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Bill.resx">
+      <DependentUpon>Form_Bill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_ChosenReport.resx">
+      <DependentUpon>Form_ChosenReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Input.resx">
+      <DependentUpon>Form_Input.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Item.resx">
+      <DependentUpon>Form_Item.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Login.resx">
+      <DependentUpon>Form_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Main.resx">
+      <DependentUpon>Form_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_MessageBox.resx">
+      <DependentUpon>Form_MessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Receipt.resx">
+      <DependentUpon>Form_Receipt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_ReferenceCalculattion.resx">
+      <DependentUpon>Form_ReferenceCalculattion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Replay.resx">
+      <DependentUpon>Form_Replay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Report.resx">
+      <DependentUpon>Form_Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Store.resx">
+      <DependentUpon>Form_Store.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_SupplierAndCustmer.resx">
+      <DependentUpon>Form_SupplierAndCustmer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_UnitItem.resx">
+      <DependentUpon>Form_UnitItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_User.resx">
+      <DependentUpon>Form_User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="From_CheakSersh.resx">
+      <DependentUpon>From_CheakSersh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyMessgeBox.resx">
+      <DependentUpon>MyMessgeBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\UserControl_Account_balances.resx">
+      <DependentUpon>UserControl_Account_balances.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\UserControl_Account_statement.resx">
+      <DependentUpon>UserControl_Account_statement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\UserControl_Billing Movement.resx">
+      <DependentUpon>UserControl_Billing Movement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\UserControl_Damaged_items.resx">
+      <DependentUpon>UserControl_Damaged_items.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\UserControl_Journal.resx">
+      <DependentUpon>UserControl_Journal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\UserControl_Material Movement_Synthesis.resx">
+      <DependentUpon>UserControl_Material Movement_Synthesis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\UserControl_Material Profits_Collective.resx">
+      <DependentUpon>UserControl_Material Profits_Collective.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\UserControl_Material_inventory.resx">
+      <DependentUpon>UserControl_Material_inventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\UserControl_Material_validity.resx">
+      <DependentUpon>UserControl_Material_validity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\UserControl_Profit_and_loss.resx">
+      <DependentUpon>UserControl_Profit_and_loss.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateAndDelete\UpdateDeleteItem_Form.resx">
+      <DependentUpon>UpdateDeleteItem_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateAndDelete\UpdateDeleteReceipt_Form.resx">
+      <DependentUpon>UpdateDeleteReceipt_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateAndDelete\UpdateDeleteReferenceCalculattion_Form.resx">
+      <DependentUpon>UpdateDeleteReferenceCalculattion_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateAndDelete\UpdateDeleteStore_Form.resx">
+      <DependentUpon>UpdateDeleteStore_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateAndDelete\UpdateDeleteSupplier_Form.resx">
+      <DependentUpon>UpdateDeleteSupplier_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateAndDelete\UpdateDeleteUnitItem_Form.resx">
+      <DependentUpon>UpdateDeleteUnitItem_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\BackUpDate.resx">
+      <DependentUpon>BackUpDate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Get_ID.resx">
+      <DependentUpon>Get_ID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Get_User.resx">
+      <DependentUpon>Get_User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\TestStoreName_UserControl.resx">
+      <DependentUpon>TestStoreName_UserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UserControls.resx">
+      <DependentUpon>UserControls.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UserControl_Add.resx">
+      <DependentUpon>UserControl_Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UserControl_CasherItem.resx">
+      <DependentUpon>UserControl_CasherItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UserControl_Delete.resx">
+      <DependentUpon>UserControl_Delete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UserControl_Edite.resx">
+      <DependentUpon>UserControl_Edite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UserControl_Serch.resx">
+      <DependentUpon>UserControl_Serch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UserControl_Setting.resx">
+      <DependentUpon>UserControl_Setting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UserControl_ViewReport.resx">
+      <DependentUpon>UserControl_ViewReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\RoundedButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Resources\user_Blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-shopping-cart-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\archive-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hospital-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\invoice-.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-receipt-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Maximaized.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exit1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exit2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mainimzed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mainimzed1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rod-of-asclepius-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lab-items.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Receipt Voucher.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Payment Voucher.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\return_Buy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Buy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sales.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Return_Selas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Store.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\return_Cach.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit_business-building.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit_business-group.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit_business-building-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit_Store.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit_lab-items.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit_hospital-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit_Receipt Voucher.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit_Payment Voucher.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit_Buy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit_Sales.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit_return_Buy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit_Return_Selas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit_return_Cach.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete_business-building.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete_business-group.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete_business-building-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete_Store.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete_lab-items.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete_hospital-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete_Receipt Voucher.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete_Payment Voucher.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete_Buy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete_Sales.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete_return_Buy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete_Return_Selas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete_return_Cach.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Background2.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
